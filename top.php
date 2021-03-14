@@ -83,7 +83,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://docs.google.com/document/d/1yfqknbs75eswLrXmWFSG-z95WK_cTwUsvUcdWVRBn2g/edit#" style="color:#FF5733">
+                        <a href="https://docs.google.com/document/d/1yfqknbs75eswLrXmWFSG-z95WK_cTwUsvUcdWVRBn2g/edit#" style="color:#FF5733" target="_blank">
                             <i class="ti-marker-alt"></i>
                             <p>Contrato completo</p>
                         </a>

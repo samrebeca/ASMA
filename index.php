@@ -13,7 +13,7 @@ if(isset($_GET['filtro'])){
     LEFT JOIN TB_CIDADES ON MOT_CID_CODIGO = CID_CODIGO
     WHERE MOT_ESTADO = 1");
 }
-$consultaCid = $MySQLi->query("SELECT * FROM TB_CIDADES ORDER BY CID_NOME");
+$consultaCid = $MySQLi->query("SELECT * FROM TB_CIDADES JOIN TB_MOTOS ON CID_CODIGO = MOT_CID_CODIGO GROUP BY CID_NOME ORDER BY CID_NOME");
 ?>
 <div class="main-panel">
     <nav class="navbar navbar-default">

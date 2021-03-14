@@ -12,7 +12,7 @@ if(isset($_GET['filtro'])){
     LEFT JOIN TB_CIDADES ON MOT_CID_CODIGO = CID_CODIGO
     WHERE MOT_ESTADO = 1");
 }
-$consultaCid = $MySQLi->query("SELECT * FROM TB_CIDADES ORDER BY CID_NOME");
+$consultaCid = $MySQLi->query("SELECT * FROM TB_CIDADES JOIN TB_MOTOS ON CID_CODIGO = MOT_CID_CODIGO GROUP BY CID_NOME ORDER BY CID_NOME");
 ?>
 <!doctype html>
 <html lang="en">
@@ -73,7 +73,7 @@ $consultaCid = $MySQLi->query("SELECT * FROM TB_CIDADES ORDER BY CID_NOME");
                         </a>
                     </li>
                     <li>
-                        <a href="https://docs.google.com/document/d/1yfqknbs75eswLrXmWFSG-z95WK_cTwUsvUcdWVRBn2g/edit#" style="color:#FF5733" title="Contrato completo">
+                        <a href="https://docs.google.com/document/d/1yfqknbs75eswLrXmWFSG-z95WK_cTwUsvUcdWVRBn2g/edit#" style="color:#FF5733" title="Contrato completo" target="_blank">
                             <i class="ti-marker-alt"></i>
                             <p style="color: transparent;"> .</p>
                         </a>
