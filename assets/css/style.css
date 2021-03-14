@@ -1,0 +1,86 @@
+.main-panel {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.checkbox-normal {
+    position: relative;
+}
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #2b2b2bb5;
+    width: 100vw;
+    height: 100vh;
+    transition: all ease 0.3s;
+    z-index: 99999999;
+    display: none;
+}
+
+.modal-confirmacao {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #FFF;
+    width: 34%;
+    transform: translate(-50%, -50%);
+    z-index: 999999999;
+    border-radius: 5px;
+    padding: 15px 25px;
+    box-shadow: 0px 0px 5px rgb(127 127 127 / 80%);
+    display: none;
+}
+
+#tituloAtencao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#tituloAtencao > span {
+    margin: 0px 6px;
+    color: #e8b011;
+}
+
+#textoModal {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.botoes-confirmacao {
+    text-align: end;
+}
+
+@media (max-width: 991px) {
+
+    .modal-exclusao {
+        width: 44%;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .modal-exclusao {
+        width: 56%;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .modal-exclusao {
+        width: 60%;
+    }
+
+}
+
+@media (max-width: 430px) {
+
+    #textoModal {
+        font-size: 20px;
+    }
+
+}

@@ -1,0 +1,126 @@
+.sidebar {
+    width: 5%; 
+    background-color: #0D1F26; 
+    top:0; 
+    bottom:0; 
+    height: 100%; 
+    min-height: 100%; 
+    float: left; 
+    position: fixed;
+    overflow: hidden;
+}
+
+.sidebar.adm-sidebar.show {
+    display: block !important;
+    z-index: 3;
+    position: absolute;
+    width: 90px;
+}
+
+.wrapper {
+    background-color: #f4f3ef;
+}
+
+.adm-sidebar {
+    width: 111px;
+    z-index: 5;
+    transition: all ease 0.3s;
+}
+
+.adm-sidebar:not(.show):hover {
+    width: 250px;
+}
+
+.sidebar .logo, .sidebar[data-background-color="white"] .logo, .off-canvas-sidebar .logo, .off-canvas-sidebar[data-background-color="white"] .logo {
+    display: none;
+}
+
+.sidebar.adm-sidebar:not(.show):hover .logo {
+    display: block;
+}
+
+.sidebar .nav p, .off-canvas-sidebar .nav p {
+    display: none;
+}
+
+.sidebar.adm-sidebar:not(.show):hover .nav p{
+    display: block;
+}
+
+.nav > li {
+    padding: 10px;
+    margin: 10px;
+}
+
+.sidebar.adm-sidebar:not(.show):hover .nav > li {
+    padding: 0px;
+    margin: 0px;
+}
+
+#show-menu {
+    display: none;
+}
+
+#itens-menu-mobile {
+    margin-top: 0.5%; 
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center;
+}
+
+@media (max-width: 1560px) {
+    .sidebar .nav li > a, .off-canvas-sidebar .nav li > a {
+        padding-left: 18px !important;
+    }
+}
+
+@media (max-width: 1230px) {
+    .sidebar .nav li > a, .off-canvas-sidebar .nav li > a {
+        padding-left: 14px !important;
+    }
+}
+
+@media (max-width: 1083px) {
+    .sidebar-wrapper {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1020px) {
+    .sidebar .nav li > a, .off-canvas-sidebar .nav li > a {
+        padding-left: 10px !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .sidebar {
+        display: none !important;
+    }
+    #show-menu {
+        display: block;
+    }
+}
+
+@media (max-width: 950px) {
+
+    .sidebar {
+        display: none !important;
+    }
+
+    .main-painel {
+        margin: 0px !important;
+    }
+
+    #itens-menu-mobile {
+        margin-top: 0.5%; 
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center;
+    }
+
+}
+    
+
+
+
